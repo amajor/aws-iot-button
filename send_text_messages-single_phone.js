@@ -28,30 +28,21 @@ const SNS = new AWS.SNS({ apiVersion: '2010-03-31' });
 exports.handler = (event, context, callback) => {
     console.log('Received event:', event);
 
-    if (event.clickType == "LONG") {
-        const payload = JSON.stringify(event);
-        const params = {
-            PhoneNumber: process.env.PHONE_NUMBER,
-            Message: LONG_CLICK_MESSAGE,
-        };
-        SNS.publish(params, callback);
+    /** Set which message to send. */
+    let clickMessage = SINGLE_CLICK_MESSAGE;
+    if (event.clickType === "LONG") {
+        clickMessage = LONG_CLICK_MESSAGE;
     }
+    if (event.clickType === "DOUBLE") {
+        clickMessage = DOUBLE_CLICK_MESSAGE;
+    }
+
+    /** Construct the parameter object. */
+    const params = {
+        PhoneNumber: process.env.PHONE_NUMBER,
+        Message: clickMessage,
+    };
     
-    if (event.clickType == "SINGLE") {
-        const payload = JSON.stringify(event);
-        const params = {
-            PhoneNumber: process.env.PHONE_NUMBER,
-            Message: SINGLE_CLICK_MESSAGE,
-        };
-        SNS.publish(params, callback);
-    }
-    
-    if (event.clickType == "DOUBLE") {
-        const payload = JSON.stringify(event);
-        const params = {
-            PhoneNumber: process.env.PHONE_NUMBER,
-            Message: DOUBLE_CLICK_MESSAGE,
-        };
-        SNS.publish(params, callback);
-    }
+    /** Publish to SNS to send the message along! */
+    SNS.publish(params, callback);
 };
