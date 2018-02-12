@@ -27,8 +27,9 @@ Copy and paste [this code](https://raw.githubusercontent.com/amajor/aws-iot-butt
 
 ### Environment Variable Examples
 
-* *Key:* `PHONE_NUMBER`
-* *Value:* `12223334444`
+* Single Phone Number
+  * *Key:* `PHONE_NUMBER`
+  * *Value:* `12223334444`
 
 ## Send SMS Text Messages to Multiple Phone Numbers
 
@@ -47,8 +48,9 @@ Copy and paste [this code](https://raw.githubusercontent.com/amajor/aws-iot-butt
   
 ### Environment Variable Examples
 
-* *Key:* `PHONE_NUMBER_LIST`
-* *Value:* `12223334444,15556667777`
+* Multiple Phone Numbers
+  * *Key:* `PHONE_NUMBER_LIST`
+  * *Value:* `12223334444,15556667777`
 
 ----------
 
