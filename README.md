@@ -15,7 +15,7 @@ Copy and paste [this code](https://raw.githubusercontent.com/amajor/aws-iot-butt
   * DOUBLE_CLICK_MESSAGE
   * LONG_CLICK_MESSAGE
 * **Environment Variables**
-  * PHONE_NUMBER
+  * PHONE_NUMBER
 
 ## Requirements
 
