@@ -2,14 +2,17 @@
 
 Snippets that can be pasted into Lambda functions for playing with an AWS IoT button.
 
-* [Requirements](https://github.com/amajor/aws-iot-button#requirements)
-* [Getting Started](https://github.com/amajor/aws-iot-button#getting-started)
+* [Requirements](#requirements)
+* [Getting Started](#getting-started)
+* Snippet Descriptions
+  * [Send SMS Text Messages to Single Phone Number](#send-sms-text-messages-to-single-phone-number)
+  * [Send SMS Text Messages to Multiple Phone Numbers](#send-sms-text-messages-to-multiple-phone-numbers)
 
 ## Snippet Descriptions
 
 ### Send SMS Text Messages to Single Phone Number
 
-Snippet stored in [send_text_messages.js](https://github.com/amajor/aws-iot-button/blob/master/send_text_messages.js)
+Snippet stored in [send_text_messages-single_phone.js](https://github.com/amajor/aws-iot-button/blob/master/send_text_messages-single_phone.js)
 
 This snippet sends 3 different text messages to a single phone number, depending on how the user clicks the button.
 
@@ -21,6 +24,31 @@ Copy and paste [this code](https://raw.githubusercontent.com/amajor/aws-iot-butt
   * LONG_CLICK_MESSAGE
 * **Environment Variables**
   * PHONE_NUMBER
+
+#### Environment Variable Examples
+
+* *Key:* `PHONE_NUMBER`
+* *Value:* `12223334444`
+
+### Send SMS Text Messages to Multiple Phone Numbers
+
+Snippet stored in [send_text_messages-multiple_phones.js](https://github.com/amajor/aws-iot-button/blob/master/send_text_messages-multiple_phones.js)
+
+This snippet sends 3 different text messages to a comma-separated list of phone numbers. The message varies depending on how the user clicks the button.
+
+Copy and paste [this code](https://raw.githubusercontent.com/amajor/aws-iot-button/master/send_text_messages-multiple_phones.js) into your function and set up the appropriate environment variable.
+
+* **Customizable Messages**
+  * SINGLE_CLICK_MESSAGE
+  * DOUBLE_CLICK_MESSAGE
+  * LONG_CLICK_MESSAGE
+* **Environment Variables**
+  * PHONE_NUMBER_LIST
+  
+#### Environment Variable Examples
+
+* *Key:* `PHONE_NUMBER_LIST`
+* *Value:* `12223334444,15556667777`
 
 ----------
 
