@@ -4,7 +4,7 @@ Snippets that can be pasted into Lambda functions for playing with an AWS IoT bu
 
 ## Snippet Descriptions
 
-### Send SMS Text Messages
+### Send SMS Text Messages to Single Phone Number
 
 This snippet sends 3 different text messages to a single phone number, depending on how the user clicks the button.
 
@@ -21,7 +21,8 @@ Copy and paste [this code](https://raw.githubusercontent.com/amajor/aws-iot-butt
 
 * Have an [AWS IoT Button](https://aws.amazon.com/iotbutton/)
 * Have an [AWS Account](https://portal.aws.amazon.com/billing/signup)
-* Initialize your button using the [AWS IoT Button Dev mobile app](https://itunes.apple.com/us/app/aws-iot-button-dev/id1178216626?mt=8) and choosing a **nodejs** option.
+* Initialize your button using the [AWS IoT Button Dev mobile app](https://itunes.apple.com/us/app/aws-iot-button-dev/id1178216626?mt=8)
+  * Choose a **nodejs** option for your Lambda function
 
 ## Getting Started
 
