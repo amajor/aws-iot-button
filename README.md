@@ -2,9 +2,14 @@
 
 Snippets that can be pasted into Lambda functions for playing with an AWS IoT button.
 
+* [Requirements](https://github.com/amajor/aws-iot-button#requirements)
+* [Getting Started](https://github.com/amajor/aws-iot-button#getting-started)
+
 ## Snippet Descriptions
 
 ### Send SMS Text Messages to Single Phone Number
+
+Snippet stored in [send_text_messages.js](https://github.com/amajor/aws-iot-button/blob/master/send_text_messages.js)
 
 This snippet sends 3 different text messages to a single phone number, depending on how the user clicks the button.
 
@@ -16,6 +21,8 @@ Copy and paste [this code](https://raw.githubusercontent.com/amajor/aws-iot-butt
   * LONG_CLICK_MESSAGE
 * **Environment Variables**
   * PHONE_NUMBER
+
+----------
 
 ## Requirements
 
