@@ -8,9 +8,9 @@ Snippets that can be pasted into Lambda functions for playing with an AWS IoT bu
   * [Send SMS Text Messages to Single Phone Number](#send-sms-text-messages-to-single-phone-number)
   * [Send SMS Text Messages to Multiple Phone Numbers](#send-sms-text-messages-to-multiple-phone-numbers)
 
-## Snippet Descriptions
+# Snippet Descriptions
 
-### Send SMS Text Messages to Single Phone Number
+## Send SMS Text Messages to Single Phone Number
 
 Snippet stored in [send_text_messages-single_phone.js](https://github.com/amajor/aws-iot-button/blob/master/send_text_messages-single_phone.js)
 
@@ -25,12 +25,12 @@ Copy and paste [this code](https://raw.githubusercontent.com/amajor/aws-iot-butt
 * **Environment Variables**
   * PHONE_NUMBER
 
-#### Environment Variable Examples
+### Environment Variable Examples
 
 * *Key:* `PHONE_NUMBER`
 * *Value:* `12223334444`
 
-### Send SMS Text Messages to Multiple Phone Numbers
+## Send SMS Text Messages to Multiple Phone Numbers
 
 Snippet stored in [send_text_messages-multiple_phones.js](https://github.com/amajor/aws-iot-button/blob/master/send_text_messages-multiple_phones.js)
 
@@ -45,21 +45,21 @@ Copy and paste [this code](https://raw.githubusercontent.com/amajor/aws-iot-butt
 * **Environment Variables**
   * PHONE_NUMBER_LIST
   
-#### Environment Variable Examples
+### Environment Variable Examples
 
 * *Key:* `PHONE_NUMBER_LIST`
 * *Value:* `12223334444,15556667777`
 
 ----------
 
-## Requirements
+# Requirements
 
 * Have an [AWS IoT Button](https://aws.amazon.com/iotbutton/)
 * Have an [AWS Account](https://portal.aws.amazon.com/billing/signup)
 * Initialize your button using the [AWS IoT Button Dev mobile app](https://itunes.apple.com/us/app/aws-iot-button-dev/id1178216626?mt=8)
   * Choose a **nodejs** option for your Lambda function
 
-## Getting Started
+# Getting Started
 
 Once you've initialized your button using your phone, you can log into your AWS account. In the *AWS Services* search bar, type *Lambda* and click on the **Lambda** selection that appears.
 
